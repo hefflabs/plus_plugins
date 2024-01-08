@@ -27,6 +27,7 @@ class Share {
   /// the iOS share sheet.
   static Future<void> shareUri(
     Uri uri, {
+    String? subject,
     Rect? sharePositionOrigin,
   }) async {
     return _platform.shareUri(uri, sharePositionOrigin: sharePositionOrigin);

@@ -26,6 +26,7 @@ class MethodChannelShare extends SharePlatform {
   @override
   Future<void> shareUri(
     Uri uri, {
+    String? subject,
     Rect? sharePositionOrigin,
   }) {
     final params = <String, dynamic>{'uri': uri.toString()};
