@@ -26,9 +26,9 @@ class Share {
   /// (if available), and the website icon will be extracted and displayed on
   /// the iOS share sheet.
   static Future<void> shareUri(
-    Uri uri,
+    Uri uri, {
     Rect? sharePositionOrigin,
-  ) async {
+  }) async {
     return _platform.shareUri(uri, sharePositionOrigin: sharePositionOrigin);
   }
 
