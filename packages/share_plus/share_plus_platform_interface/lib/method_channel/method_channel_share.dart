@@ -29,7 +29,10 @@ class MethodChannelShare extends SharePlatform {
     String? subject,
     Rect? sharePositionOrigin,
   }) {
-    final params = <String, dynamic>{'uri': uri.toString()};
+    final params = <String, dynamic>{
+      'uri': uri.toString(),
+      'subject': subject,
+    };
 
     if (sharePositionOrigin != null) {
       params['originX'] = sharePositionOrigin.left;
